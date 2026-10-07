@@ -244,10 +244,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.darkBackground,
+      backgroundColor: AppColors.primary,
       appBar: AppBar(
         title: const Text('My Profile'),
-        backgroundColor: AppColors.darkBackground,
+        backgroundColor: AppColors.primary,
         foregroundColor: AppColors.darkTextPrimary,
         elevation: 0,
       ),
@@ -314,7 +314,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         children: [
           CircleAvatar(
             radius: 42,
-            backgroundColor: AppColors.primarySurface,
+            backgroundColor: AppColors.primary,
             child: Text(
               _initials,
               style: AppTextStyles.bodyLarge.copyWith(
@@ -338,7 +338,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           Text(
             _studentId,
             style: AppTextStyles.bodyMedium.copyWith(
-              color: AppColors.darkTextSecondary,
+              color: AppColors.white,
             ),
           ),
           const SizedBox(height: 18),
@@ -349,7 +349,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             label: const Text('Edit Profile'),
             style: ElevatedButton.styleFrom(
-              backgroundColor: AppColors.primarySurface,
+              backgroundColor: AppColors.primary,
               foregroundColor: AppColors.textPrimary,
               elevation: 0,
               padding: const EdgeInsets.symmetric(
@@ -382,7 +382,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           Text(
             'Student Information',
             style: AppTextStyles.bodyLarge.copyWith(
-              color: AppColors.darkTextPrimary,
+              color: AppColors.secondary,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -433,7 +433,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           width: 42,
           height: 42,
           decoration: BoxDecoration(
-            color: AppColors.darkBackgroundSecondary,
+            color: AppColors.primary,
             borderRadius: BorderRadius.circular(12),
           ),
           child: Icon(
@@ -450,7 +450,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               Text(
                 label,
                 style: AppTextStyles.bodyMedium.copyWith(
-                  color: AppColors.darkTextTertiary,
+                  color: AppColors.primarySurface,
                 ),
               ),
               const SizedBox(height: 3),
@@ -484,7 +484,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           Text(
             'Account Settings',
             style: AppTextStyles.bodyLarge.copyWith(
-              color: AppColors.darkTextPrimary,
+              color: AppColors.secondary,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -518,7 +518,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     required VoidCallback onTap,
   }) {
     return Material(
-      color: AppColors.darkBackgroundSecondary,
+      color: AppColors.primary,
       borderRadius: BorderRadius.circular(16),
       child: InkWell(
         onTap: onTap,
@@ -555,7 +555,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     Text(
                       subtitle,
                       style: AppTextStyles.bodyMedium.copyWith(
-                        color: AppColors.darkTextTertiary,
+                        color: AppColors.white,
                         fontSize: 12,
                       ),
                     ),
@@ -564,7 +564,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               Icon(
                 Icons.chevron_right_rounded,
-                color: AppColors.darkTextTertiary,
+                color: AppColors.surface,
               ),
             ],
           ),
@@ -584,7 +584,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         label: const Text('Log Out'),
         style: ElevatedButton.styleFrom(
           // Same filled red color as Staff Profile
-          backgroundColor: AppColors.error,
+          backgroundColor: AppColors.surface,
           foregroundColor: AppColors.white,
           elevation: 0,
           shape: RoundedRectangleBorder(

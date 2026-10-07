@@ -4,96 +4,130 @@ class AppColors {
   AppColors._();
 
   // ============================================================
-  // PRIMARY PALETTE
-  // Inspired by the provided purple + warm peach reference UI.
+  // APP BACKGROUND
   // ============================================================
 
-  static const Color primary = Color(0xFF4B456F);
-  static const Color primaryDark = Color(0xFF383354);
-  static const Color primaryLight = Color(0xFF6A638C);
-
-  static const Color primarySurface = Color(0xFFE9C093);
-  static const Color secondary = Color(0xFFDFAF83);
-  static const Color secondaryLight = Color(0xFFF0CAA0);
+  static const Color background = Color(0xFF080D12);
+  static const Color backgroundSecondary = Color(0xFF080D12);
 
   // ============================================================
-  // LIGHT SURFACES
+  // SURFACE / CARDS / INPUTS
   // ============================================================
 
-  static const Color background = Color(0xFFE8E4DC);
-  static const Color backgroundSecondary = Color(0xFFDCD8D0);
+  static const Color surface = Color(0xFF0C3B2E);
+  static const Color surfaceVariant = Color(0xFF0C3B2E);
 
-  static const Color surface = Color(0xFF504A73);
-  static const Color surfaceVariant = Color(0xFF433D63);
+  static const Color darkSurface = Color(0xFF0C3B2E);
+  static const Color darkSurfaceVariant = Color(0xFF0C3B2E);
+
+  // Card
+  static const Color card = Color(0xFF0C3B2E);
+
+  // Input
+  static const Color input = Color(0xFF0C3B2E);
 
   // ============================================================
-  // DARK SURFACES
+  // DARK BACKGROUNDS
   // ============================================================
 
-  static const Color darkBackground = Color(0xFF332F50);
-  static const Color darkBackgroundSecondary = Color(0xFF292643);
+  // Kept because existing UniServa screens use these names.
+  static const Color darkBackground = Color(0xFF080D12);
+  static const Color darkBackgroundSecondary = Color(0xFF080D12);
 
-  static const Color darkSurface = Color(0xFF403A61);
-  static const Color darkSurfaceVariant = Color(0xFF49436A);
+  // ============================================================
+  // PRIMARY / BUTTONS
+  // ============================================================
+
+  static const Color primary = Color(0xFF145C46);
+  static const Color primaryLight = Color(0xFF145C46);
+  static const Color primaryDark = Color(0xFF145C46);
+
+  // Bright primary
+  static const Color primaryBright = Color(0xFF1B7358);
+
+  // ============================================================
+  // SECONDARY / GOLD ACCENT
+  // ============================================================
+
+  // Main gold accent used for icons/highlights.
+  static const Color secondary = Color(0xFFFFBA00);
+
+  static const Color secondaryLight = Color(0xFFFFC533);
+  static const Color secondaryBright = Color(0xFFFFC533);
+  static const Color secondaryDark = Color(0xFFD99D00);
+
+  // Kept for existing UniServa code.
+  static const Color primarySurface = Color(0xFFFFBA00);
 
   // ============================================================
   // TEXT
   // ============================================================
 
-  static const Color textPrimary = Color(0xFF393354);
-  static const Color textSecondary = Color(0xFF68627A);
-  static const Color textTertiary = Color(0xFF8D879A);
+  static const Color textPrimary = Colors.white;
+  static const Color textSecondary = Color(0xFFA7AFB7);
+  static const Color textTertiary = Color(0xFF68727C);
 
-  static const Color textOnPrimary = Color(0xFFFFF8F2);
-  static const Color textDisabled = Color(0xFFAAA5B0);
+  static const Color textOnPrimary = Colors.white;
+  static const Color textDisabled = Color(0xFF68727C);
 
-  static const Color darkTextPrimary = Color(0xFFFFF8F2);
-  static const Color darkTextSecondary = Color(0xFFD8D1D8);
-  static const Color darkTextTertiary = Color(0xFFAAA5B0);
-  static const Color darkTextDisabled = Color(0xFF777285);
+  // Dark theme text
+  static const Color darkTextPrimary = Colors.white;
+  static const Color darkTextSecondary = Color(0xFFA7AFB7);
+  static const Color darkTextTertiary = Color(0xFF68727C);
+  static const Color darkTextDisabled = Color(0xFF68727C);
 
   // ============================================================
   // BORDERS / DIVIDERS
   // ============================================================
 
-  static const Color border = Color(0xFFD1CBC3);
-  static const Color borderLight = Color(0xFFE2DDD6);
-  static const Color divider = Color(0xFFD1CBC3);
+  static const Color border = Color(0xFF26313A);
+  static const Color borderLight = Color(0xFF26313A);
+  static const Color divider = Color(0xFF26313A);
 
-  static const Color darkBorder = Color(0xFF5A5475);
-  static const Color darkDivider = Color(0xFF514B6C);
+  static const Color darkBorder = Color(0xFF26313A);
+  static const Color darkDivider = Color(0xFF26313A);
 
   // ============================================================
-  // STATUS COLORS
+  // GENERAL STATUS COLORS
   // ============================================================
 
-  static const Color success = Color(0xFF82B89A);
-  static const Color warning = Color(0xFFE3B26E);
+  static const Color success = Color(0xFF1B7358);
+  static const Color warning = Color(0xFFFFBA00);
   static const Color error = Color(0xFFD98986);
-  static const Color info = Color(0xFF8BAAC8);
+  static const Color info = Color(0xFFFFBA00);
 
-  // Complaint status
-  static const Color submitted = Color(0xFFB995D1);
-  static const Color underReview = Color(0xFF8BAAC8);
-  static const Color assigned = Color(0xFF9B91C9);
-  static const Color inProgress = Color(0xFFE3B26E);
-  static const Color resolved = Color(0xFF82B89A);
-  static const Color closed = Color(0xFF858092);
+  // ============================================================
+  // COMPLAINT STATUS COLORS
+  // ============================================================
+
+  static const Color submitted = Color(0xFFFFBA00);
+  static const Color underReview = Color(0xFFFFBA00);
+  static const Color assigned = Color(0xFF145C46);
+  static const Color inProgress = Color(0xFFFFBA00);
+  static const Color resolved = Color(0xFF1B7358);
+  static const Color closed = Color(0xFF68727C);
   static const Color reopened = Color(0xFFD98986);
 
-  // Priority
-  static const Color lowPriority = Color(0xFF82B89A);
-  static const Color mediumPriority = Color(0xFFE3B26E);
-  static const Color highPriority = Color(0xFFD99A73);
+  // ============================================================
+  // PRIORITY COLORS
+  // ============================================================
+
+  static const Color lowPriority = Color(0xFF1B7358);
+  static const Color mediumPriority = Color(0xFFFFBA00);
+  static const Color highPriority = Color(0xFFFFC533);
   static const Color urgentPriority = Color(0xFFD98986);
 
   // ============================================================
   // COMMON COLORS
   // ============================================================
 
-  static const Color white = Color(0xFFFFFCF8);
-  static const Color black = Color(0xFF26223A);
+  static const Color white = Colors.white;
+  static const Color black = Colors.black;
   static const Color transparent = Colors.transparent;
+
+  // ============================================================
+  // OVERLAYS
+  // ============================================================
 
   static const Color overlay = Color(0x33000000);
   static const Color overlayDark = Color(0x66000000);

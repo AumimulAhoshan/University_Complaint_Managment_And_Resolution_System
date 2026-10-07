@@ -170,7 +170,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
       width: double.infinity,
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: AppColors.primaryDark,
+        color: AppColors.darkSurface,
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
           BoxShadow(
@@ -208,7 +208,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                       : 'You have $_unreadCount unread '
                       '${_unreadCount == 1 ? 'notification' : 'notifications'}',
                   style: AppTextStyles.bodyLarge.copyWith(
-                    color: AppColors.white,
+                    color: AppColors.secondary,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -216,7 +216,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
                 Text(
                   'Stay updated with your complaint activity.',
                   style: AppTextStyles.bodyMedium.copyWith(
-                    color: AppColors.darkTextSecondary,
+                    color: AppColors.white,
                   ),
                 ),
               ],
@@ -252,7 +252,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
       ) {
     return Material(
       // Same dark purple style as the finalized My Complaints cards.
-      color: AppColors.primaryDark,
+      color: AppColors.darkSurface,
       borderRadius: BorderRadius.circular(22),
       child: InkWell(
         onTap: () {

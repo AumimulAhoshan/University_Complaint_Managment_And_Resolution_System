@@ -96,7 +96,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
       width: double.infinity,
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: AppColors.primaryDark,
+        color: AppColors.surface,
         borderRadius: BorderRadius.circular(28),
         boxShadow: [
           BoxShadow(
@@ -150,7 +150,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                   'Submitted on October 02, 2026',
                   style: TextStyle(
                     fontSize: 12,
-                    color: AppColors.darkTextSecondary,
+                    color: AppColors.white,
                   ),
                 ),
               ],
@@ -181,7 +181,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w700,
-              color: AppColors.white,
+              color: AppColors.secondary,
             ),
           ),
           const SizedBox(height: 14),
@@ -219,7 +219,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                       'Your complaint is currently being handled by the assigned team.',
                       style: TextStyle(
                         fontSize: 12,
-                        color: AppColors.darkTextSecondary,
+                        color: AppColors.white,
                         height: 1.4,
                       ),
                     ),
@@ -335,8 +335,8 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                 Text(
                   title,
                   style: const TextStyle(
-                    fontSize: 10,
-                    color: AppColors.darkTextTertiary,
+                    fontSize: 11,
+                    color: AppColors.white,
                   ),
                 ),
                 const SizedBox(height: 3),
@@ -372,7 +372,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
             'This issue is affecting our regular classroom presentations and lectures.',
         style: TextStyle(
           fontSize: 13,
-          color: AppColors.darkTextSecondary,
+          color: AppColors.white,
           height: 1.6,
         ),
       ),
@@ -411,7 +411,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
             description: 'Assigned to the IT Support Department.',
             date: 'Oct 02, 2026 • 12:20 PM',
             icon: Icons.person_outline_rounded,
-            color: AppColors.assigned,
+            color: AppColors.secondary,
             isLast: false,
           ),
           _buildTimelineItem(
@@ -490,7 +490,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                   description,
                   style: const TextStyle(
                     fontSize: 12,
-                    color: AppColors.darkTextSecondary,
+                    color: AppColors.white,
                     height: 1.4,
                   ),
                 ),
@@ -499,7 +499,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                   date,
                   style: const TextStyle(
                     fontSize: 10,
-                    color: AppColors.darkTextTertiary,
+                    color: AppColors.white,
                   ),
                 ),
               ],
@@ -557,7 +557,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                     'Assigned Staff: Ahmed Rahman',
                     style: TextStyle(
                       fontSize: 12,
-                      color: AppColors.darkTextSecondary,
+                      color: AppColors.white,
                     ),
                   ),
                 ],
@@ -641,7 +641,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                   fileType,
                   style: const TextStyle(
                     fontSize: 10,
-                    color: AppColors.darkTextTertiary,
+                    color: AppColors.white,
                   ),
                 ),
               ],
@@ -773,7 +773,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                   message,
                   style: const TextStyle(
                     fontSize: 12,
-                    color: AppColors.darkTextSecondary,
+                    color: AppColors.white,
                     height: 1.45,
                   ),
                 ),
@@ -782,7 +782,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                   time,
                   style: const TextStyle(
                     fontSize: 9,
-                    color: AppColors.darkTextTertiary,
+                    color: AppColors.white,
                   ),
                 ),
               ],
@@ -813,7 +813,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
             decoration: InputDecoration(
               hintText: 'Write a comment...',
               hintStyle: const TextStyle(
-                color: AppColors.darkTextSecondary,
+                color: AppColors.white,
                 fontSize: 13,
               ),
               prefixIcon: const Icon(
@@ -830,7 +830,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(17),
                 borderSide: BorderSide(
-                  color: AppColors.primarySurface.withValues(
+                  color: AppColors.primary.withValues(
                     alpha: 0.75,
                   ),
                   width: 1.2,
@@ -858,7 +858,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
           width: 52,
           height: 52,
           decoration: BoxDecoration(
-            color: AppColors.primarySurface,
+            color: AppColors.primary,
             borderRadius: BorderRadius.circular(17),
           ),
           child: IconButton(
@@ -867,7 +867,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
             },
             icon: const Icon(
               Icons.send_rounded,
-              color: AppColors.textPrimary,
+              color: AppColors.secondary,
             ),
           ),
         ),
@@ -913,7 +913,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
             'You can provide feedback after your complaint is resolved.',
             style: TextStyle(
               fontSize: 11,
-              color: AppColors.darkTextSecondary,
+              color: AppColors.white,
               height: 1.4,
             ),
           ),
@@ -980,16 +980,16 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
             decoration: InputDecoration(
               hintText: 'Tell us about your experience...',
               hintStyle: const TextStyle(
-                color: AppColors.darkTextSecondary,
+                color: AppColors.white,
                 fontSize: 12,
               ),
               filled: true,
-              fillColor: AppColors.primaryDark,
+              fillColor: AppColors.surface,
               contentPadding: const EdgeInsets.all(15),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(17),
                 borderSide: BorderSide(
-                  color: AppColors.primarySurface.withValues(
+                  color: AppColors.surface.withValues(
                     alpha: 0.35,
                   ),
                 ),
@@ -997,7 +997,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(17),
                 borderSide: const BorderSide(
-                  color: AppColors.primarySurface,
+                  color: AppColors.surface,
                   width: 1.4,
                 ),
               ),
@@ -1024,7 +1024,7 @@ class _ComplaintDetailsScreenState extends State<ComplaintDetailsScreen> {
                 backgroundColor: AppColors.primarySurface,
                 foregroundColor: AppColors.textPrimary,
                 disabledBackgroundColor: AppColors.primaryDark,
-                disabledForegroundColor: AppColors.darkTextDisabled,
+                disabledForegroundColor: AppColors.white,
                 elevation: 0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),

@@ -131,7 +131,7 @@ class _MyComplaintsScreenState extends State<MyComplaintsScreen> {
       width: double.infinity,
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: AppColors.primaryDark,
+        color: AppColors.darkSurface,
         borderRadius: BorderRadius.circular(28),
         boxShadow: [
           BoxShadow(
@@ -152,7 +152,7 @@ class _MyComplaintsScreenState extends State<MyComplaintsScreen> {
                 Text(
                   'My Complaints',
                   style: AppTextStyles.displayMedium.copyWith(
-                    color: AppColors.white,
+                    color: AppColors.secondary,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
@@ -160,7 +160,7 @@ class _MyComplaintsScreenState extends State<MyComplaintsScreen> {
                 Text(
                   'Track and manage all your submitted complaints.',
                   style: AppTextStyles.bodyMedium.copyWith(
-                    color: AppColors.darkTextSecondary,
+                    color: AppColors.white,
                     height: 1.5,
                   ),
                 ),
@@ -171,7 +171,7 @@ class _MyComplaintsScreenState extends State<MyComplaintsScreen> {
             width: 64,
             height: 64,
             decoration: BoxDecoration(
-              color: AppColors.primary,
+              color: AppColors.primaryLight,
               borderRadius: BorderRadius.circular(20),
             ),
             child: const Icon(
@@ -293,7 +293,7 @@ class _MyComplaintsScreenState extends State<MyComplaintsScreen> {
       }) {
     return Material(
       // Changed to match the dark My Complaints header card.
-      color: AppColors.primaryDark,
+      color: AppColors.darkSurface,
       borderRadius: BorderRadius.circular(24),
       child: InkWell(
         borderRadius: BorderRadius.circular(24),

@@ -135,14 +135,14 @@ class _SubmitComplaintScreenState extends State<SubmitComplaintScreen> {
     return InputDecoration(
       hintText: hint,
       hintStyle: AppTextStyles.bodyMedium.copyWith(
-        color: AppColors.darkTextTertiary,
+        color: AppColors.white,
       ),
       prefixIcon: Icon(
         icon,
-        color: AppColors.secondary,
+        color: AppColors.darkBackground,
       ),
       filled: true,
-      fillColor: AppColors.surfaceVariant,
+      fillColor: AppColors.primaryBright,
       contentPadding: const EdgeInsets.symmetric(
         horizontal: 18,
         vertical: 17,
@@ -192,7 +192,7 @@ class _SubmitComplaintScreenState extends State<SubmitComplaintScreen> {
             Text(
               ' *',
               style: AppTextStyles.bodyMedium.copyWith(
-                color: AppColors.secondary,
+                color: AppColors.white,
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -213,7 +213,7 @@ class _SubmitComplaintScreenState extends State<SubmitComplaintScreen> {
       isExpanded: true,
       icon: const Icon(
         Icons.keyboard_arrow_down_rounded,
-        color: AppColors.secondary,
+        color: AppColors.darkBackground,
       ),
       dropdownColor: AppColors.surface,
       style: AppTextStyles.bodyMedium.copyWith(
@@ -401,7 +401,7 @@ class _SubmitComplaintScreenState extends State<SubmitComplaintScreen> {
                       Text(
                         'Submit a Complaint',
                         style: AppTextStyles.displayMedium.copyWith(
-                          color: AppColors.white,
+                          color: AppColors.secondary,
                           fontSize: isDesktop ? 30 : 26,
                         ),
                       ),
@@ -410,7 +410,7 @@ class _SubmitComplaintScreenState extends State<SubmitComplaintScreen> {
                         'Tell us about the issue and provide enough '
                             'information so it can be handled efficiently.',
                         style: AppTextStyles.bodyMedium.copyWith(
-                          color: AppColors.darkTextSecondary,
+                          color: AppColors.white,
                         ),
                       ),
                       const SizedBox(height: 30),
@@ -667,7 +667,7 @@ class _SubmitComplaintScreenState extends State<SubmitComplaintScreen> {
                             ),
                           ),
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: AppColors.secondary,
+                            backgroundColor: AppColors.primaryBright,
                             foregroundColor: AppColors.textPrimary,
                             elevation: 0,
                             shape: RoundedRectangleBorder(

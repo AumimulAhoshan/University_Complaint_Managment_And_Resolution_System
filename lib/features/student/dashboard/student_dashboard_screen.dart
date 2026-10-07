@@ -90,7 +90,7 @@ class StudentDashboardScreen extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: AppColors.primaryDark,
+        color: AppColors.surface,
         borderRadius: BorderRadius.circular(28),
         boxShadow: [
           BoxShadow(
@@ -148,7 +148,7 @@ class StudentDashboardScreen extends StatelessWidget {
               style: TextStyle(
                 fontSize: 21,
                 fontWeight: FontWeight.w700,
-                color: AppColors.white,
+                color: AppColors.secondary,
               ),
             ),
           ],
@@ -191,7 +191,7 @@ class StudentDashboardScreen extends StatelessWidget {
           'Submit Complaint',
         ),
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primarySurface,
+          backgroundColor: AppColors.resolved,
           foregroundColor: AppColors.textPrimary,
           padding: const EdgeInsets.symmetric(
             horizontal: 20,
@@ -819,7 +819,7 @@ class StudentDashboardScreen extends StatelessWidget {
                   'You can track your complaint status anytime from My Complaints.',
                   style: TextStyle(
                     fontSize: 12,
-                    color: AppColors.darkTextSecondary,
+                    color: AppColors.white,
                     height: 1.4,
                   ),
                 ),
